@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<h1>Welcome to GamesApp</h1>
+<p>Play classic games like Snake and Tic Tac Toe. Choose your favorite and start playing!</p>
+<a href="{{ url_for('snake') }}" class="button">Play Snake</a>
+<a href="{{ url_for('tictactoe') }}" class="button">Play Tic Tac Toe</a>
+{% endblock %}
